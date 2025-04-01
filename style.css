@@ -1,9 +1,10 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #1c1c1c;
-  color: white;
+  background: #121212;
+  color: #e0e0e0;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 80px);
@@ -11,10 +12,11 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
+
 .card {
   width: 80px;
   height: 80px;
-  background: #5b5b5b;
+  background: #333;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,15 +24,18 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  color: transparent;
 }
+
 .flipped {
-  background: #800080;
-  color: white;
+  background: #555;
+  color: #ffffff;
 }
 
 .card:active {
   scale: 0.95;
 }
+
 .card:hover {
-  opacity: 0.9;
+  opacity: 0.85;
 }
